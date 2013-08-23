@@ -1,0 +1,66 @@
+MultiMonitor 1.2 by Alurcard2
+
+The purpose of this module is to aid themers in supporting systems which
+utilize multiple monitors.
+
+Evars:
+------------------------------------------------------------------------------
+NumberOfMonitors
+- The current number of monitors connected.
+
+VirtualScreenX
+- The X coordinate of the virtual screen, relative to the primary monitor.
+
+VirtualScreenY
+- The Y coordinate of the virtual screen, relative to the primary monitor.
+
+VirtualScreenResolutionX
+ - The X resolution of the virtual screen.
+ 
+VirtualScreenResolutionY
+ - The Y resolution of the virtual screen.
+ 
+Monitor#Top
+ - The top coordinate of monitor # relative to the primary monitor. Negative
+   values are possible.
+
+Monitor#Left
+ - The left coordinate of monitor # relative to the primary monitor. Negative
+   values are possible.
+
+Monitor#Bottom
+ - The bottom coordinate of monitor # relative to the primary monitor.
+   Negative values are possible.
+
+Monitor#Right
+ - The right coordinate of monitor # relative to the primary monitor.
+   Negative values are possible.
+
+Monitor#ResolutionX
+ - The X resolution of monitor #
+
+Monitor#ResolutionY
+ - The Y resolution of monitor #
+
+Events:
+------------------------------------------------------------------------------
+OnMonitorConnected "Command"
+ - "Command" will be executed when a display is added to the virtual screen.
+OnMonitorDisconnected "Command"
+ - "Command" will be executed when a display is removed from the virtual
+   screen.
+OnPrimaryMonitorChanged "Command"
+ - "Command" will be executed when the primary monitor has changed.
+
+Changelog:
+------------------------------------------------------------------------------
+v1.2 (2010-08-21)
+ - Fixed problem where a monitor # would be skiped.
+ - Removed the need for Visual Studio 2010 runtimes.
+
+v1.1 (2010-07-28)
+ - Removed the PrimaryMonitor evar. The primary monitor is now always #1.
+ - Added OnPrimaryMonitorChanged.
+
+v1.0 (2008-10-25)
+ - Initial Release.

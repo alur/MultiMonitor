@@ -1,0 +1,6 @@
+/Release
+/*.suo
+/*.sdf
+/*.opensdf
+/Debug
+/*.user
